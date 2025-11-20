@@ -1,4 +1,3 @@
-```tsx
 import React, { createContext, useContext, useState, ReactNode } from 'react'
 
 type Language = 'zh' | 'en'
@@ -31,4 +30,4 @@ export function useLanguage() {
   }
   return context
 }
-```
+
