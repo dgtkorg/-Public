@@ -1,5 +1,4 @@
-```typescript
-export const translations = {
+  export const translations = {
   zh: {
     nav: {
       home: '首页',
@@ -503,4 +502,3 @@ export const translations = {
     }
   }
 }
-```
