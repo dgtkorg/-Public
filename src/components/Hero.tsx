@@ -1,4 +1,3 @@
-```tsx
 import { Link } from 'react-router-dom'
 import { ArrowRight, FileText } from 'lucide-react'
 import { useLanguage } from '../lib/LanguageContext'
@@ -65,4 +64,4 @@ export default function Hero() {
     </section>
   )
 }
-```
+
