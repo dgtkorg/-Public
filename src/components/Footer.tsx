@@ -1,4 +1,3 @@
-```tsx
 import { Link } from 'react-router-dom'
 import { Send, Twitter } from 'lucide-react'
 import { useLanguage } from '../lib/LanguageContext'
@@ -96,4 +95,3 @@ export default function Footer() {
     </footer>
   )
 }
-```
