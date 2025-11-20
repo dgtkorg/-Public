@@ -1,4 +1,3 @@
-```tsx
 import { Link } from 'react-router-dom'
 import { Menu, X, Globe } from 'lucide-react'
 import { useState } from 'react'
@@ -84,4 +83,3 @@ export default function Header() {
     </header>
   )
 }
-```
