@@ -1,4 +1,3 @@
-```tsx
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Calendar } from 'lucide-react'
 import { useLanguage } from '../lib/LanguageContext'
@@ -273,4 +272,3 @@ export default function Whitepaper() {
     </div>
   )
 }
-```
