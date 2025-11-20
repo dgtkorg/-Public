@@ -1,4 +1,3 @@
-```tsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { LanguageProvider } from './lib/LanguageContext'
 import Home from './pages/Home'
@@ -18,4 +17,4 @@ function App() {
 }
 
 export default App
-```
+
