@@ -1,38 +1,32 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react'
-
-type Language = 'zh' | 'en'
+import { createContext, useContext, useState, ReactNode } from 'react';
+import { translations, Language, TranslationKey } from './translations';
 
 interface LanguageContextType {
-  language: Language
-  setLanguage: (lang: Language) => void
-  toggleLanguage: () => void
-  t: (translations: { zh: string; en: string }) => string
+  language: Language;
+  setLanguage: (lang: Language) => void;
+  t: (key: TranslationKey) => string;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('zh')
+  const [language, setLanguage] = useState<Language>('en');
 
-  const toggleLanguage = () => {
-    setLanguage(prev => prev === 'zh' ? 'en' : 'zh')
-  }
-
-  const t = (translations: { zh: string; en: string }) => {
-    return translations[language]
-  }
+  const t = (key: TranslationKey): string => {
+    return translations[language][key];
+  };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
     </LanguageContext.Provider>
-  )
+  );
 }
 
 export function useLanguage() {
-  const context = useContext(LanguageContext)
+  const context = useContext(LanguageContext);
   if (context === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider')
+    throw new Error('useLanguage must be used within a LanguageProvider');
   }
-  return context
+  return context;
 }
