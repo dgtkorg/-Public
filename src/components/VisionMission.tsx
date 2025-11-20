@@ -1,4 +1,3 @@
-```tsx
 import { Eye, Target, Check } from 'lucide-react'
 import { useLanguage } from '../lib/LanguageContext'
 import { translations } from '../lib/translations'
@@ -59,4 +58,4 @@ export default function VisionMission() {
     </section>
   )
 }
-```
+
