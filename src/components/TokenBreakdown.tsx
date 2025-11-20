@@ -1,4 +1,3 @@
-```tsx
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts'
 import { useLanguage } from '../lib/LanguageContext'
 import { translations } from '../lib/translations'
@@ -90,4 +89,4 @@ export default function TokenBreakdown() {
     </section>
   )
 }
-```
+
