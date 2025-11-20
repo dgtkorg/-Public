@@ -1,4 +1,3 @@
-```tsx
 import { BookOpen, Users, Shield, Globe } from 'lucide-react'
 import { useLanguage } from '../lib/LanguageContext'
 import { translations } from '../lib/translations'
@@ -71,4 +70,3 @@ export default function WhyChooseUs() {
     </section>
   )
 }
-```
